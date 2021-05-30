@@ -1,0 +1,25 @@
+#Name :comparison of different functions
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+k = 4
+n = np.arange(5,12)
+# tRY TO FIND VALUE FOR given function 
+c1 = np.log2(n) 
+c2 = n 
+c3 = np.power(n,2)  
+c4 = np.power(n,3) 
+c5 = np.power(n,k)
+
+# used plot function to plot
+plt.plot(n,c1)
+plt.plot(n,c2)
+plt.plot(n,c3)
+plt.plot(n,c4)
+plt.plot(n,c5)
+
+plt.title('comparison Run time for different functions')
+plt.xlabel('size of input(n)')
+plt.ylabel('run-time (seconds)')
+plt.legend(['logarithmic', 'linear', 'quadratic', 'cubic', 'polynomial'])
